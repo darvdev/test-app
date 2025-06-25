@@ -12,7 +12,8 @@ workflows:
           flutter pub get
       - name: Build APK
         script: |
-          flutter build apk --release
+          #flutter build apk --release
+          flutter build appbundle --release
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
 
